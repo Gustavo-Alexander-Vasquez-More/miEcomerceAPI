@@ -7,7 +7,6 @@ import lombok.Setter;
 
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
-public class PhotoRequestDTO {
-    private String url;
-    private boolean isPrincipal;
+public class CategoryRequestDTO {
+    private String name;
 }

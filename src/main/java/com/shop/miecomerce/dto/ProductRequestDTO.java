@@ -6,14 +6,11 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter @Setter
+@NoArgsConstructor @AllArgsConstructor
 public class ProductRequestDTO {
     private String name;
     private String description;
-    private List<PhotoRequestDTO> photos;
     private Double price;
     private Integer stock;
     private String sku;

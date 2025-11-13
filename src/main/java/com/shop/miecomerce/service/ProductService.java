@@ -15,8 +15,4 @@ public class ProductService {
         this.photoRepository = photoRepository;
     }
 
-    public ProductRequestDTO createProduct(ProductRequestDTO productRequestDTO) {
-
-    }
-
 }

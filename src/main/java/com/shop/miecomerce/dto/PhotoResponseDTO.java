@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
-public class PhotoRequestDTO {
+public class PhotoResponseDTO {
+    private Long id;
     private String url;
-    private boolean isPrincipal;
 }
