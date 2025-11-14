@@ -7,6 +7,8 @@ import lombok.Setter;
 
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
-public class CategoryRequestDTO {
-    private String name;
+public class ErrorResponseDTO {
+    private int status;
+    private String message;
+    private String path;
 }

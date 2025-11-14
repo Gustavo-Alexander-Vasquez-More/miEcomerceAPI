@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
 public class ProductResponseDTO {
@@ -14,4 +16,6 @@ public class ProductResponseDTO {
     private Double price;
     private Integer stock;
     private String sku;
+    private Boolean isActive;
+    private LocalDateTime createDate;
 }

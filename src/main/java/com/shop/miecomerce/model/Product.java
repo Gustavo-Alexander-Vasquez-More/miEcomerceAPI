@@ -11,7 +11,7 @@
     @Entity
     @Table(name = "products")
     @Getter @Setter
-    @NoArgsConstructor @AllArgsConstructor
+    @NoArgsConstructor
     public class Product {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +28,14 @@
         private String sku;
         private boolean isActive=true; // El producto está activo por defecto
         private LocalDateTime createDate;
+
+        public Product(String name, String description, double price, int stock, String sku) {
+            this.name = name;
+            this.description = description;
+            this.price = price;
+            this.stock = stock;
+            this.sku = sku;
+        }
 
         @PrePersist // Se ejecuta antes de la primera inserción y pone la fecha actual
         protected void onCreate() {

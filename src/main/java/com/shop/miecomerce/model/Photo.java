@@ -17,7 +17,7 @@ public class Photo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
-    private Product product;
+    private Product product; //hibernate crea la columna product_id atumáticamente
     @Column(nullable = false)
     private String url;
     @Column(nullable = false)
