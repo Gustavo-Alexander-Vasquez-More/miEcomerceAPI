@@ -10,11 +10,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductService {
     public final ProductRepository productRepository;
-    public final PhotoRepository photoRepository;
 
-    public ProductService(ProductRepository productRepository, PhotoRepository photoRepository) {
+    public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
-        this.photoRepository = photoRepository;
     }
 
     public ProductResponseDTO createProduct(ProductRequestDTO productRequestDTO){

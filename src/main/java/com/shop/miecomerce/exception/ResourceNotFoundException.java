@@ -7,11 +7,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class ResourceNotFoundException extends RuntimeException {
     // Constructor que recibe el mensaje de error
     public ResourceNotFoundException(String message) {
-        // Llama al constructor de RuntimeException para establecer el mensaje
         super(message);
     }
-
-    // Opcional: Constructor para incluir la causa raíz (otra excepción)
+    // Constructor que recibe el mensaje de error y la causa
     public ResourceNotFoundException(String message, Throwable cause) {
         super(message, cause);
     }
